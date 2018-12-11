@@ -95,6 +95,7 @@ The Adafruit FONA modem used in this project requires a 2G SIM card, which can b
 The FONA modem uses AT commands sent over serial in order to place calls, text, or do any other desired function. There is extensive documentation on the available AT commands available from Adafruit. Adafruit also offers many other manuals which extensively cover the functions related to radio, bluetooth, etc.
 
 AT Command Manual: [AT_Command.pdf](https://cdn-shop.adafruit.com/product-files/1946/SIM800+Series_AT+Command+Manual_V1.09.pdf)
+
 Adafruit Documentation: [Adafruit FONA](https://learn.adafruit.com/adafruit-fona-mini-gsm-gprs-cellular-phone-module/downloads)
  
 
