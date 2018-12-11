@@ -3,7 +3,6 @@ Website To Do
 * Add demo video
 * Add nice picture beneath intro text, maybe additional pictures for a photo album
 * Add pinout diagram and other hardware setup instructions
-* Create links to all the websites and components (plus any other tutorials)
 * Proof-Read (especially make sure the manual makes sense)
 
 ## Introduction
@@ -13,6 +12,7 @@ PiPhone is a project that adds cellular functionality to a Raspberry Pi Zero W. 
 This project was created as a project for the ECE 4180 Embedded Systems Design course at Georgia Tech by Mason Mahaffey, Oguzhan Yilmaz, and John Bell.
 
 **PICTURE HERE**
+
 
 ## Demonstration Video
 
@@ -79,7 +79,9 @@ In order to create a GUI that implemented the touchscreen phone concept that our
 3. You are now ready to download and run the PiPhone code!
 
 ## Internet Functionality
-In addition to the Processing code used for the GUI and serial commands, the internet required more use of the Linux terminal along with additional libraries. To add the libraries, follow [this tutorial](). For the terminal commands, we created shell (.sh) files that are opened by the Processing program in order to include internet with this phone. These files are provided here on the Github and must be in the same directory as the Processing program in order to work.
+In addition to the Processing code used for the GUI and serial commands, the internet required more use of the Linux terminal along with additional libraries. To add the libraries, follow [this tutorial](https://learn.adafruit.com/fona-tethering-to-raspberry-pi-or-beaglebone-black). Note that depending on your Pi, you may need to alter which serial port you use based on the tutorial. For our project on the Pi Zero W, we needed to use dev/serial0 rather than dev/ttyAMA0.
+
+For the terminal commands, we created shell (.sh) files that are opened by the Processing program in order to include internet with this phone. These files are provided here on the Github and must be in the same directory as the Processing program in order to work.
 
 ## SIM Card Details
 The Adafruit FONA modem used in this project requires a 2G SIM card, which can be difficult to obtain. Our group found success using a [Ting](https://ting.com/) SIM card. In principle, any unlocked 2G GSM SIM card should work with the FONA modem, however we have not tested any other SIM's.
