@@ -33,14 +33,14 @@ Raspberry Pi | FONA | 3.7V Battery | 3.5mm Mic/Headphone | HDMI Display | Mouse/
 --- | --- | --- | --- | --- | ---
 3V3| Vio | -- | -- | -- | --
 GND | GND | -- | -- | -- | --
-TX | RX | -- | -- | -- | --
-RX | TX | -- | -- | -- | --
+TXD | RX | -- | -- | -- | --
+RXD | TX | -- | -- | -- | --
 GND | Key | -- | -- | -- | --
 -- | Bat | (+) | -- | -- | --
 GND | -- | (-) | -- | -- | --
 -- | 3.5mm | -- | 3.5mm  | -- | --
 Mini HDMI| --| -- | -- | HDMI input | --
-USB input| -- | -- | -- | -- | USB Dongle
+USB input| -- | -- | -- | USB output | USB Dongle
 
 ## Manual
 ### Phone Calls
@@ -52,15 +52,20 @@ USB input| -- | -- | -- | -- | USB Dongle
 5. When the call is done, touch or click "Hang Up"
 
 ### Texting
+#### To Send a Text:
 1. Select the "Text" button in the top left section of the GUI
 2. Type the 10-digit phone number in the upper text box beneath the number pad
 3. Use the lower text box on the screen to type a message
 4. Click "Send Text"
+#### To Receive a Text:
+1. Select the "Text" button in the top left section of the GUI
+2. Click the "Get Texts" button
+3. Use the forward and back buttons to scroll through all received texts
 
 ### Radio
-The radio will automatically scan for available stations when activated. When using the arrow keys to select a station, the available stations will be based on this initial scan.
+The radio will automatically scan for available stations when activated. When using the buttons to select a station, the available stations will be based on this initial scan.
 1. Select the "Radio" button in the top left section of the GUI
-2. Select the radio station with the left and right arrow buttons to tune the radio
+2. Select the radio station with the forward and back buttons to tune the radio
 
 ### Internet
 The final functionality that we have implemented with our Pi Phone is the ability to activate the data on the SIM card to allow for internet access on the Pi. This process was the most complicated part of the project, and there is additional documentation on how to set up this functionality in the supplemental notes below.
@@ -84,12 +89,13 @@ In addition to the Processing code used for the GUI and serial commands, the int
 For the terminal commands, we created shell (.sh) files that are opened by the Processing program in order to include internet with this phone. These files are provided here on the Github and must be in the same directory as the Processing program in order to work.
 
 ## SIM Card Details
-The Adafruit FONA modem used in this project requires a 2G SIM card, which can be difficult to obtain. Our group found success using a [Ting](https://ting.com/) SIM card. In principle, any unlocked 2G GSM SIM card should work with the FONA modem, however we have not tested any other SIM's.
+The Adafruit FONA modem used in this project requires a 2G SIM card, which can be difficult to obtain. Our group found success using a [Ting](https://ting.com/) SIM card. In principle, any unlocked 2G GSM SIM card should work with the FONA modem, however we have not tested any other SIM's. The [tutorial](https://learn.adafruit.com/fona-tethering-to-raspberry-pi-or-beaglebone-black) for the internet discussed previously gives information for how to set up your SIM card with the FONA.
 
 ## AT Commands
-The FONA modem uses AT commands sent over serial in order to place calls, text, or do any other desired function. There is extensive documentation on the available AT commands available from Adafruit.
+The FONA modem uses AT commands sent over serial in order to place calls, text, or do any other desired function. There is extensive documentation on the available AT commands available from Adafruit. Adafruit also offers many other manuals which extensively cover the functions related to radio, bluetooth, etc.
 
 AT Command Manual: [AT_Command.pdf](https://cdn-shop.adafruit.com/product-files/1946/SIM800+Series_AT+Command+Manual_V1.09.pdf)
+Adafruit Documentation: [Adafruit FONA](https://learn.adafruit.com/adafruit-fona-mini-gsm-gprs-cellular-phone-module/downloads)
  
 
 ## Future Work
@@ -97,3 +103,4 @@ This project is currently a functional phone with radio and texting, but the ver
 * Implement Address Book
 * Add status indicators such as signal quality or battery life
 * Construct a case to create a phone appearance
+* Use the FONA's bluetooth capability to interface with additional devices
