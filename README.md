@@ -43,6 +43,8 @@ GND | -- | (-) | -- | -- | --
 Mini HDMI| --| -- | -- | HDMI input | --
 USB input| -- | -- | -- | USB output | USB Dongle
 
+![Schematic Block Diagram](https://github.com/PiPhone4180/PiPhone/blob/master/PiPhone%20Schematic.jpg)
+
 ## Manual
 ### Phone Calls
 **Note:** The phone is only compatible with US numbers
