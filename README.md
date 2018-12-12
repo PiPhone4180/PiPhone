@@ -11,10 +11,11 @@ PiPhone is a project that adds cellular functionality to a Raspberry Pi Zero W. 
 
 This project was created as a project for the ECE 4180 Embedded Systems Design course at Georgia Tech by Mason Mahaffey, Oguzhan Yilmaz, and John Bell.
 
-**PICTURE HERE**
+![PiPhone GUI](https://github.com/PiPhone4180/PiPhone/blob/master/IMG_1450.jpg)
 
 
 ## Demonstration Video
+[![Alt text](https://img.youtube.com/vi/zfbGyqf1aKo/0.jpg)](https://www.youtube.com/watch?v=zfbGyqf1aKo)
 
 ## Hardware Setup
 ### Components
