@@ -1,9 +1,4 @@
 # Welcome to the PiPhone wiki!
-Website To Do
-* Add demo video
-* Add nice picture beneath intro text, maybe additional pictures for a photo album
-* Add pinout diagram and other hardware setup instructions
-* Proof-Read (especially make sure the manual makes sense)
 
 ## Introduction
 
