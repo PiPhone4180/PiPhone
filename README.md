@@ -2,7 +2,7 @@
 
 ## Introduction
 
-PiPhone is a project that adds cellular functionality to a Raspberry Pi Zero W. With this project, users will be able to make and receive calls and texts as well as play FM radio and retrieve GPS coordinates.
+PiPhone is a project that adds cellular functionality to a Raspberry Pi Zero W. With this project, users will be able to make and receive calls and texts as well as play FM radio, access internet data, and retrieve GPS coordinates.
 
 This project was created as a project for the ECE 4180 Embedded Systems Design course at Georgia Tech by Mason Mahaffey, Oguzhan Yilmaz, and John Bell.
 
